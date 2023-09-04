@@ -54,6 +54,7 @@
             btnListele2.TabIndex = 1;
             btnListele2.Text = "Listele 2";
             btnListele2.UseVisualStyleBackColor = true;
+            btnListele2.Click += btnListele2_Click;
             // 
             // btnListele3
             // 
