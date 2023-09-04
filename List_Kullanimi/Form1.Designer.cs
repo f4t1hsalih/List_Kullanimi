@@ -64,6 +64,7 @@
             btnListele3.TabIndex = 2;
             btnListele3.Text = "Listele 3";
             btnListele3.UseVisualStyleBackColor = true;
+            btnListele3.Click += btnListele3_Click;
             // 
             // listBox1
             // 

@@ -50,5 +50,22 @@ namespace List_Kullanimi
                 MessageBox.Show("Bu sayý yok");
             }
         }
+
+        private void btnListele3_Click(object sender, EventArgs e)
+        {
+            listBox3.Items.Clear();
+            List<Persons> person = new List<Persons>();
+            person.Add(new Persons
+            {
+                Name = "Ali",
+                Last_name = "Demir",
+                Job = "Öðretmen"
+            });
+
+            foreach (Persons item in person)
+            {
+                listBox3.Items.Add(item.Name + " " + item.Last_name + " " + item.Job);
+            }
+        }
     }
 }
