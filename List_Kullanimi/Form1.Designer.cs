@@ -28,40 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            btnListele1 = new Button();
+            btnListele2 = new Button();
+            btnListele3 = new Button();
             listBox1 = new ListBox();
             listBox2 = new ListBox();
             listBox3 = new ListBox();
             SuspendLayout();
             // 
-            // button1
+            // btnListele1
             // 
-            button1.Location = new Point(12, 337);
-            button1.Name = "button1";
-            button1.Size = new Size(193, 35);
-            button1.TabIndex = 0;
-            button1.Text = "Listele 1";
-            button1.UseVisualStyleBackColor = true;
+            btnListele1.Location = new Point(12, 337);
+            btnListele1.Name = "btnListele1";
+            btnListele1.Size = new Size(193, 35);
+            btnListele1.TabIndex = 0;
+            btnListele1.Text = "Listele 1";
+            btnListele1.UseVisualStyleBackColor = true;
+            btnListele1.Click += btnListele1_Click;
             // 
-            // button2
+            // btnListele2
             // 
-            button2.Location = new Point(225, 337);
-            button2.Name = "button2";
-            button2.Size = new Size(193, 35);
-            button2.TabIndex = 1;
-            button2.Text = "Listele 2";
-            button2.UseVisualStyleBackColor = true;
+            btnListele2.Location = new Point(225, 337);
+            btnListele2.Name = "btnListele2";
+            btnListele2.Size = new Size(193, 35);
+            btnListele2.TabIndex = 1;
+            btnListele2.Text = "Listele 2";
+            btnListele2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnListele3
             // 
-            button3.Location = new Point(437, 337);
-            button3.Name = "button3";
-            button3.Size = new Size(193, 35);
-            button3.TabIndex = 2;
-            button3.Text = "Listele 3";
-            button3.UseVisualStyleBackColor = true;
+            btnListele3.Location = new Point(437, 337);
+            btnListele3.Name = "btnListele3";
+            btnListele3.Size = new Size(193, 35);
+            btnListele3.TabIndex = 2;
+            btnListele3.Text = "Listele 3";
+            btnListele3.UseVisualStyleBackColor = true;
             // 
             // listBox1
             // 
@@ -94,17 +95,19 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(211, 219, 193);
             ClientSize = new Size(646, 386);
             Controls.Add(listBox3);
             Controls.Add(listBox2);
             Controls.Add(listBox1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnListele3);
+            Controls.Add(btnListele2);
+            Controls.Add(btnListele1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(34, 52, 77);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
+            MaximizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "List Kullanımı";
@@ -113,9 +116,9 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button btnListele1;
+        private Button btnListele2;
+        private Button btnListele3;
         private ListBox listBox1;
         private ListBox listBox2;
         private ListBox listBox3;
