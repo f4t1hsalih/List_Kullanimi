@@ -17,6 +17,8 @@ namespace List_Kullanimi
             persons.Add("Veli");
             persons.Add("Mehmet");
 
+            persons.Remove("Veli");
+
             foreach (string item in persons)
             {
                 listBox1.Items.Add(item);
@@ -37,6 +39,15 @@ namespace List_Kullanimi
             foreach (int item in numbers)
             {
                 listBox2.Items.Add(item);
+            }
+
+            if (numbers.Contains(32))
+            {
+                MessageBox.Show("Bu sayý var");
+            }
+            else
+            {
+                MessageBox.Show("Bu sayý yok");
             }
         }
     }
